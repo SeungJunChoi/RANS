@@ -381,13 +381,8 @@ SUBROUTINE eddy_visc(nhx,nhy,Unew,delY_u,ml,delYY_u,delYX_u,ll,lh,left,right,tag
 	
 	IMPLICIT NONE
 	INTEGER :: nhx, nhy 
-<<<<<<< HEAD
 	REAL(KIND = 8),DIMENSION(nhy,nhx), INTENT(IN) :: Unew,ml
 	REAL(KIND = 8),DIMENSION(nhy,nhx), INTENT(INOUT) :: delYY_u,delYX_u,delY_u
-=======
-	REAL(KIND = 8),DIMENSION(nhx,nhy), INTENT(IN) :: Unew,ml
-	REAL(KIND = 8),DIMENSION(nhx,nhy), INTENT(INOUT) :: delYY_u,delYX_u,delY_u
->>>>>>> 816a1d70ab9d7e87484c9816dfd3d04d2661b6f1
 	INTEGER :: i,j
 	INTEGER :: ll, lh
 	INTEGER :: cart_comm,tag
